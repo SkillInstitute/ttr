@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1189851455841780');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1189851455841780&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Trade Room - SEBI Registered Investment Advisory. Educational content on Share Market and Trading.">
+    <title>The Trade Room | SEBI Registered Investment Advisory</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px 16px 100px;
+        }
+        
+        /* Profile Section */
+        .profile-section {
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #3b82f6;
+            object-fit: cover;
+            margin-bottom: 16px;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .profile-section h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        .sebi-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(74, 222, 128, 0.3);
+            margin-top: 8px;
+        }
+        
+        .sebi-badge::before {
+            content: "✓";
+            background: #22c55e;
+            color: white;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+        }
+        
+        /* Cards */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: #60a5fa;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            color: #fbbf24;
+            font-weight: 600;
+            text-align: center;
+            font-style: italic;
+            margin: 12px 0;
+        }
+        
+        /* Features */
+        .features-list {
+            list-style: none;
+        }
+        
+        .features-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .features-list li::before {
+            content: "→";
+            color: #3b82f6;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1rem;
+            border-radius: 12px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+        }
+        
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 30%,
+                rgba(255, 255, 255, 0.1) 50%,
+                transparent 70%
+            );
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+        
+        /* Disclaimer Box */
+        .disclaimer-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 16px;
+            margin: 20px 0;
+            font-size: 0.8rem;
+            color: #fca5a5;
+            line-height: 1.5;
+        }
+        
+        .disclaimer-box strong {
+            color: #ef4444;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+        
+        /* Trust Indicators */
+        .trust-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(59, 130, 246, 0.1);
+            color: #93c5fd;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 4px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        
+        .trust-section {
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 20px;
+        }
+        
+        .footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        
+        /* Bottom Nav */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 20px 20px;
+            z-index: 100;
+        }
+        
+        .nav-button {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(5, 150, 105, 0.5);
+        }
+        
+        .nav-subtext {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-top: 8px;
+        }
+        
+        /* Hindi Text */
+        .hindi-text {
+            font-family: 'Segoe UI', 'Mangal', sans-serif;
+        }
+        
+        /* SEBI Info */
+        .sebi-info {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            margin: 16px 0;
+        }
+        
+        .sebi-number {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #4ade80;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .sebi-label {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/69a974a2aed26_b38bd08b-8944-4e62-a9a2-07d7fded1654.jfif" alt="The Trade Room" class="profile-img">
+        <h1>The Trade Room</h1>
+        <div class="sebi-badge">SEBI Registered</div>
+        
+        <div class="sebi-info">
+            <div class="sebi-label">SEBI Registration Number</div>
+            <div class="sebi-number">INH000011954</div>
+        </div>
+        
+        <p class="tagline hindi-text">"हम नहीं हमारे परिणाम बोलते हैं"</p>
+    </div>
+    
+    <!-- Main CTA Card -->
+    <div class="card">
+        <h2>📊 What We Offer</h2>
+        <ul class="features-list">
+            <li>Investment Research & Analysis</li>
+            <li>Share Market Education</li>
+            <li>Trading Strategies & Insights</li>
+            <li>Risk Management Techniques</li>
+        </ul>
+        
+        <a href="https://t.me/+_44uMlUXE4g1NmQ1" class="cta-button">Join Our Telegram Channel</a>
+        
+        <p style="text-align: center; font-size: 0.9rem; color: #cbd5e1; margin-top: 12px;">
+            📍 Stay in the channel for at least 1 week and see our work
+        </p>
+    </div>
+    
+    <!-- Trust Section -->
+    <div class="trust-section">
+        <span class="trust-pill">✓ Educational Content</span>
+        <span class="trust-pill">✓ Research Based</span>
+        <span class="trust-pill">✓ SEBI Compliant</span>
+    </div>
+    
+    <!-- Disclaimer -->
+    <div class="disclaimer-box">
+        <strong>⚠️ Important Disclaimer</strong>
+        <p>
+            The Trade Room is a SEBI registered investment advisor (Reg. No: INH000011954). 
+            All content provided is for educational and informational purposes only. 
+            Stock market investments are subject to market risks. Past performance is not 
+            indicative of future results. Please read all scheme related documents carefully 
+            before investing. We do not guarantee any returns. Consult your financial advisor 
+            before making any investment decisions.
+        </p>
+    </div>
+    
+    <!-- About -->
+    <div class="card">
+        <h2>👤 Channel Controlled By</h2>
+        <p style="text-align: center; font-size: 1.1rem; color: #fbbf24; font-weight: 600;">
+            RA { The Trade Room }
+        </p>
+        <p style="text-align: center; font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">
+            SEBI Registered Investment Advisor
+        </p>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 The Trade Room. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="https://t.me/+_44uMlUXE4g1NmQ1">Join Telegram</a> | 
+            SEBI Reg. No: INH000011954
+        </p>
+    </div>
+    
+</div>
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+    <a href="https://t.me/+_44uMlUXE4g1NmQ1" class="nav-button hindi-text">
+        अभी टेलेग्राम जॉइन करें
+    </a>
+    <p class="nav-subtext">Free Educational Content • SEBI Registered</p>
+</div>
+
+</body>
+</html>
